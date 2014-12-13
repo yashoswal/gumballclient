@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <title>Extra Credit Gumball Machine Client</title>
+</head>
+
+<body>
+<h1 align="center">Extra Credit Gumball Machine Client</h1>
+
+<!-- FORM SECTION -->
+    <p>
+    <input type="hidden" name="state" id="state" value="<%= state %>" />
+    <input type="hidden" name="model" id="model" value="<%= model %>" />
+    <input type="hidden" name="serial" id="serial" value="<%= serial %>" />
+    <input type="hidden" name="hash" id="hash" value="<%= hash %>" />
+    
+    
+    
+    <div align="center" >
+    	<img src="images/gumballMachine.jpg" />
+    	<p>
+    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <input type="button" name="event" onClick="process('insertQuarter')" id="btnInsertQuarter" value="Insert Quarter">
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <input type="button" name="event" onClick="process('turnCrank')" id="btnTurnCrank" value="Turn Crank">
+    	</p>
+    </div>
+    <div align="center">
+         <textarea name="message" cols="50" rows="6" readonly id="message">
+    Gumball Machine Status: <%= status %>
+    Gumball Machine State: <%= state %>
+    Gumball Machine Model: <%= model %>
+    Gumball Machine Serial: <%= serial %>
+        </textarea>
+    </div>
+</p>
+</body>
+</html>

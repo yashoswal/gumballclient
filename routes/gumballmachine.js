@@ -1,7 +1,7 @@
 var restClient = require('node-rest-client').Client;
 
 var client = new restClient();
-var host = "http://localhost:8000";
+var host = "http://gumballserver-yashoswal.rhcloud.com/";
 
 
 // GET call for loading GumballMachine details
